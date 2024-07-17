@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+    
+{%block content%}
+
+<center>
+
+	<h3 class="display-1" style="color:rgb(52, 179, 99);">PREDICTED CAPTION </h3>
+
+
+	<br>
+	<br>
+	
+<img src="{{url_for('static', filename='file.jpg')}}" alt="image" height=340px>
+
+<br>
+
+<h2 class='text-white'>
+	{{data}}
+</h2>
+
+</center>
+
+{%endblock%}
